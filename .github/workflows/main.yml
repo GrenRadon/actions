@@ -9,7 +9,7 @@ jobs:
         steps:
             - name: ls
               run: |
-                sudo touch hola.txt
+                touch hola.txt
                 echo "Hola Mundo" >> hola.txt  
                 cat hola.txt
                 apt-get install nginx curl 
