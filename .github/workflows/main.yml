@@ -1,0 +1,14 @@
+name: Test
+
+on: [push]
+
+jobs: 
+    test-build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: ls
+              run: |
+                echo "Hola Mundo" >> hola.txt  
+                cat hola.txt
+                apt-get install nginx curl 
